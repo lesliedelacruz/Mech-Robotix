@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica que el documento sigue la estructura HTML5 -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres en UTF-8 para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la página para que sea responsiva en dispositivos móviles -->
+    <title>Galería - Mech Robotix</title> <!-- Título de la pestaña del navegador -->
+
+    <!-- Fuente Space Grotesk importada desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace a la hoja de estilos CSS del proyecto -->
+    <link rel="stylesheet" href="css/styles.css"> 
+
+    <!-- Biblioteca FontAwesome para iconos (se usa para el botón de regreso) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sección principal de la galería -->
+    <section class="gallery-section">
+        
+        <!-- Botón de regreso a la página de proyectos -->
+        <a href="proyectos.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Regresar <!-- Icono de flecha usando FontAwesome -->
+        </a>
+
+        <!-- Título y descripción del proyecto "Wheeled Chair" -->
+        <h1>WHEELED CHAIR</h1>
+        <p>Con un adaptador que se instala rápidamente y es desmontable, convertimos tu silla mecánica en eléctrica...</p>
+        
+        <!-- Segunda sección de la galería -->
+        <section class="gallery-section">
+            <h1>Galería</h1>
+            
+            <!-- Subtítulo de imágenes -->
+            <h1>FOTOS</h1>
+            <div class="gallery-container">
+                <!-- Imágenes de la galería -->
+                <img src="img/img silla/imagen1.jpg" class="gallery-image">
+                <img src="img/img silla/imagen2.jpg" class="gallery-image">
+                <img src="img/img silla/imagen3.jpg" class="gallery-image">
+            </div>
+
+            <!-- Sección de videos -->
+            <div class="gallery-contrainer"> <!-- Posible error tipográfico: "contrainer" debería ser "container" -->
+                <h1>VIDEOS</h1>
+                
+                <!-- Videos con controles para reproducir -->
+                <video src="img/videos/video1.mp4" controls class="gallery-video"></video>
+                <video src="img/videos/Video2.mp4" controls class="gallery-videos"></video> <!-- Posible error: "gallery-videos" vs. "gallery-video" -->
+            </div>
+
+            <!-- Modal para ver imágenes en tamaño completo -->
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span> <!-- Botón para cerrar el modal -->
+                <img class="modal-content" id="modalImg"> <!-- Imagen a mostrar en el modal -->
+                <div id="caption"></div> <!-- Pie de foto para la imagen modal -->
+            </div>
+        </section>
+
+    </section>
+
+    <!-- Archivos JavaScript para funcionalidades interactivas -->
+    <script src="js/script.js"></script> <!-- Posible control de menú u otras funciones generales -->
+    <script src="js/script-img.js"></script> <!-- Código específico para manipulación de imágenes (como el modal) -->
+
+</body>
+</html>
